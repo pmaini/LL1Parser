@@ -12,32 +12,58 @@ A program to generate an LL(1) parser for a given grammar and to parse input str
 
 example input: 
 
-8 
-E:TX 
-X:+TX 
-X:e 
-T:FY 
-Y:*FY 
-Y:e 
-F:a 
-F:(E) 
+8
+
+E:TX
+
+X:+TX
+
+X:e
+
+T:FY
+
+Y:*FY
+
+Y:e
+
+F:a
+
+F:(E)
+
 <path to file containing string to be parsed> 
 
+
+
 example input string:
+
 a+a*a 
+
 
 The output prints the sentential form in each step.
 
+
 example output:
+
 E
+
 TX
+
 FYX
+
 aYX
+
 aX
+
 a+TX
+
 a+FYX
+
 a+aYX
+
 a+a*FYX
+
 a+a*aYX
+
 a+a*aX
+
 a+a*a
