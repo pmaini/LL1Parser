@@ -1,7 +1,7 @@
 LL1Parser
 =========
 
-LL1 parser implementation
+LL1 parser implementation.  
 A program to generate an LL(1) parser for a given grammar and to parse input strings. 
 
 =>The input will give the number of productions in the grammar and each line will list one production.  
